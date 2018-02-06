@@ -1,1 +1,7 @@
-document.body.appendChild('<hr/>')
+$(() => {
+  $('#acknowledgement .btn').click(e => {
+    e.preventDefault();
+    $('#acknowledgement').hide();
+    $('#description').show();
+  })
+});
