@@ -19,7 +19,12 @@ $(() => {
   $('#hint').click(e => {
     e.preventDefault();
     $('#description').hide();
-    $('#answer').show();
-    $('#answerText').text(getAnswer());
+    $('#asking').show();
+
+    setTimeout(() => {
+      $('#asking').hide();
+      $('#answer').show();
+      $('#answerText').text(getAnswer());
+    }, 8000)
   });
 });
