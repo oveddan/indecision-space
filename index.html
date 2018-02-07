@@ -1,40 +1,63 @@
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-</head>
-
-<body>
-  <div class='container container-fluid'>
-    <div class='row'>
-      <div class='col-xs'>
-        <div class="jumbotron" id="acknowledgement">
-          <h1 class="display-4">Stuck in Indecision</h1>
-          <p class="lead">Can't choose which class to drop? Which flavor of boba tea to pick? If you should go home or keep working?</p>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class='jumbotron jumbotron-fluid'>
+      <div class='container container-fluid'>
+        <div id="acknowledgement">
+          <h1 class="display-4">Stuck in <span>Indecision</span></h1>
+          <p class="lead">Can't choose which class to drop? Which flavor of boba tea to pick?</p>
           <hr class="my-4">
-          <p>To let the Oracle guide you on the right path, aknowledge your predicament:</p>
+          <p style='text-align: center'>
+            <img src="ask_oracle.jpg" style='height: 200px; text-align: center; margin: auto' />
+          </p>
+          <p>Let the Oracle guide you on the right path</p>
           <p class="lead">
             <a class="btn btn-primary btn-lg btn-block" href="#" role="button">I'm Undecided</a>
           </p>
         </div>
         <div id="description" style="display: none">
-          <h2>Let's face it, you're undecided.</h2>
-          <p>The Oracle would like to know: how many choices are you facing?</p>
-          <a class="btn btn-primary btn-lg btn-block" href="#" role="button" id="hint">Give me a hint</a>
+          <h1 class="display-4">You're <span>Undecided</span></h1>
+          <p>Follow the footsteps of the ancient Greeks and consult the Oracle.</p>
+          <hr class="my-4">
+          <p>
+            But first, think hard about your choices.  What are the pros and cons?
+            Does it really matter?
+          </p>
+          <p style='text-align: center'>
+            <img src="ask_oracle.jpg" style='height: 200px; text-align: center; margin: auto' />
+          </p>
+          <form>
+            <div class='form-group'>
+              <a class="btn btn-primary btn-lg btn-block" href="#" role="button" id="hint">Oracle, please help me choose!</a>
+            </div>
+        </div>
+        <div id="asking" style="display:none">
+          <div class='rockingoracle swing'></div>
         </div>
         <div id="answer" style="display: none">
-          <p>The choice has to do with something <a id="answerText"></a></p>
+          <h1 class="display-4">The Oracle says:</h1>
+          <hr class="my-4">
+          <p style='text-align: center'>
+            <img src="ask_oracle_answer.jpg" style='height: 300px; text-align: center; margin: auto' />
+          </p>
+          <h3>The answer has to do with something <a id="answerText"></a></h3>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script src="adjective.js"></script>
-  <script src="index.js"></script>
-</body>
+    <script src="adjective.js"></script>
+    <script src="index.js"></script>
+  </body>
 
 </html>
