@@ -1,5 +1,5 @@
 function getAnswer() {
-  var oracle = adjectives[Math.floor(Math.random()*100)];
+  var oracle = adjectives[Math.floor(Math.random()*300)];
   return oracle ;
 }
 
