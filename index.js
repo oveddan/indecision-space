@@ -8,6 +8,13 @@ $(() => {
     e.preventDefault();
     $('#acknowledgement').hide();
     $('#description').show();
+
+    $('#description .list-group-item').removeClass('active');
+    $('#description .btn').addClass('disabled');
+
+    setTimeout(() => {
+      $('#description .btn').removeClass('disabled');
+    }, 5000);
   });
   $('#hint').click(e => {
     e.preventDefault();

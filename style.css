@@ -1,0 +1,21 @@
+h1 span {
+  color: #6a00d7;
+}
+
+.jumbotron {
+  background: #fff;
+}
+
+.btn-primary, .btn-primary:hover  {
+  border-radius: 0;
+  background-color: #6a00d7;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #8b42d7;
+}
+
+.list-group-item.active {
+  background-color: #6a00d7;
+  border-color: #6a00d7;
+}
