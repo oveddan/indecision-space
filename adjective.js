@@ -121,7 +121,6 @@ var adjectives = [
 "successful",
 "electrical",
 "expensive you bought last month",
-"pregnant",
 "intelligent",
 "interesting",
 "poor",
@@ -297,5 +296,7 @@ var adjectives = [
 "slow",
 "clean",
 "fresh",
-"that you are thinking about right now"
+"that you are thinking about right now",
+"your friend talked about yesterday"
+
 ]
